@@ -9,11 +9,16 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@babylonjs/core": "^8.46.2",
+    "@babylonjs/gui": "^8.46.2",
+    "@babylonjs/loaders": "^8.46.2",
+    "@babylonjs/procedural-textures": "^8.46.2",
     "next": "16.1.4",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
   "devDependencies": {
+    "@playwright/test": "^1.57.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
