@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Solar System 3D
+
+An interactive 3D experience of the solar system built with modern web technologies.
+
+## Overview
+
+This project renders a scientifically inspired (though artistically stylized) representation of our solar system. Users can explore planets, view their orbits, and focus on specific celestial bodies to learn more.
+
+## Tech Stack
+
+- **Framework:** [Next.js 16](https://nextjs.org/) (App Router)
+- **3D Engine:** [Babylon.js 8.x](https://www.babylonjs.com/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Testing:** [Playwright](https://playwright.dev/)
+
+## Features
+
+- 🌌 **Interactive 3D Scene:** Pan, zoom, and rotate freely around the solar system.
+- 🪐 **Real-time Orbits:** Planets orbit the Sun and rotate on their axes with relative speeds.
+- 🔭 **Focus Mode:** Click on any planet or use the UI menu to smooth-zoom and focus on a specific target.
+- 🎨 **PBR Materials:** Physically Based Rendering for realistic lighting and surface textures.
+- 📱 **Responsive Design:** Seamless experience across different screen sizes.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (v20+ recommended)
+- npm, yarn, pnpm, or bun
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd solar-system-3d
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
 
-## Learn More
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `app/`: Next.js App Router pages and layouts.
+- `components/`: React components, including the 3D Scene wrapper.
+- `lib/`: Core game logic, planet data, and Babylon.js scene setup.
+- `public/textures/`: Assets for planetary surfaces.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the [MIT License](LICENSE).
